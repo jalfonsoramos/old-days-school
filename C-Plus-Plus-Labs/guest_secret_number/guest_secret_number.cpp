@@ -19,7 +19,7 @@ int main()
   // Guest loop
   do
   {
-    printf("Guest a secret number between %d and %d: ", min, max);
+    printf("Guest a secret number between %d and %d (%d attempt(s)): ", min, max, attempts);
     scanf("%d", &inputNumber);
     if (inputNumber == secretNumber)
     {
