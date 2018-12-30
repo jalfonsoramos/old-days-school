@@ -28,14 +28,16 @@ int main()
     }
     else
     {
+      // Lets help the user by switching the min or max with the inputNumber 
       if (inputNumber < secretNumber)
       {
         min = inputNumber;
       }
-      else if (inputNumber > secretNumber)
+      else
       {
         max = inputNumber;
       }
+
       attempts++;
     }
   } while (!exit);
