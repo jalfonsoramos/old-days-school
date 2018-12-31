@@ -6,7 +6,11 @@
 
 int main()
 {
+  #ifdef _WIN32
+  system("cls");
+  #else
   system("clear");
+  #endif
 
   // Variable declaration/initialization
   int inputNumber, secretNumber, min = 1, max = 100, attempts = 1;
@@ -14,7 +18,7 @@ int main()
 
   // Get a random number between min and max values
   srand(time(NULL));
-  secretNumber = rand() % max + 1;
+  secretNumber = rand() % max + min;
 
   // Guest loop
   do
