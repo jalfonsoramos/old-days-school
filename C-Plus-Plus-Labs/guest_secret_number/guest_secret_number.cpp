@@ -6,7 +6,11 @@
 
 int main()
 {
+  #ifdef _WIN32
+  system("cls");
+  #else
   system("clear");
+  #endif
 
   // Variable declaration/initialization
   int inputNumber, secretNumber, min = 1, max = 100, attempts = 1;
