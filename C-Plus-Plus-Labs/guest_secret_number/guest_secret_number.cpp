@@ -14,7 +14,7 @@ int main()
 
   // Get a random number between min and max values
   srand(time(NULL));
-  secretNumber = rand() % max + 1;
+  secretNumber = rand() % max + min;
 
   // Guest loop
   do
